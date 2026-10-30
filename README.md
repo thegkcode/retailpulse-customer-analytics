@@ -1,13 +1,13 @@
-# 📊 RetailPulse – Customer Insights Dashboard
+# 📊 RetailPulse – Customer Shopping Behavior Analysis
 
 <p align="center">
-  <strong>Turning Retail Data into Actionable Business Insights</strong>
+  <strong>Transforming Retail Data into Actionable Customer Insights</strong>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=databricks&logoColor=white" />
   <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
 </p>
@@ -16,192 +16,167 @@
 
 ## 📌 Project Overview
 
-**RetailPulse** is an end-to-end retail data analytics project focused on understanding customer purchasing behavior and identifying meaningful business insights from shopping data.
+**RetailPulse** is an end-to-end data analytics project that explores customer shopping behavior to uncover purchasing patterns, product performance, and customer preferences.
 
-The project explores customer demographics, purchasing patterns, product categories, subscription preferences, discount usage, shipping methods, and customer reviews.
+The project transforms raw retail transaction data into meaningful business insights through Python-based data preprocessing, SQL-driven analysis, and interactive Power BI visualizations.
 
-Using Python, SQL, PostgreSQL, and Power BI, raw shopping data is transformed into meaningful insights and interactive visualizations that help support data-driven business decisions.
+Rather than simply reporting sales figures, RetailPulse focuses on understanding the factors behind customer purchasing decisions, including demographics, discounts, subscriptions, product ratings, and shopping preferences.
 
 ## 🎯 Business Objectives
 
-- Understand customer purchasing behavior and spending patterns.
-- Analyze revenue and sales performance across product categories.
-- Explore customer preferences based on age and gender.
-- Examine subscription patterns and customer loyalty indicators.
-- Evaluate discount usage and its relationship with customer spending.
-- Analyze customer reviews and product ratings.
-- Present key findings through an interactive Power BI dashboard.
+- Analyze customer purchasing patterns and spending behavior.
+- Identify revenue contributions across product categories and customer segments.
+- Understand the relationship between discounts and purchase amounts.
+- Compare purchasing behavior of subscribed and non-subscribed customers.
+- Evaluate product performance through customer ratings and reviews.
+- Explore customer preferences across demographics and shipping methods.
+- Identify opportunities to improve customer engagement and retention.
 
 ## 📂 Dataset Overview
 
-The project uses a customer shopping behavior dataset containing:
+The analysis is based on a Customer Shopping Behavior dataset containing:
 
-- **3,900** purchase records
-- **18** original columns
-- **37** missing values in the review rating field
-
-The dataset includes information about customer demographics, product purchases, discounts, subscriptions, shipping preferences, payment methods, and review ratings.
-
-## 🛠️ Tech Stack
-
-| Technology | Purpose |
+| Dataset Attribute | Details |
 |---|---|
-| Python | Data cleaning and preprocessing |
-| Pandas | Data manipulation and analysis |
-| PostgreSQL | Database storage and querying |
-| SQL | Business analysis and data extraction |
-| Power BI | Interactive dashboard and visualization |
-| Jupyter Notebook | Exploratory data analysis |
+| Total Records | 3,900 |
+| Original Columns | 18 |
+| Missing Values | 37 |
+| Missing Data Field | Review Rating |
 
-## 🔄 Project Workflow
+The dataset includes customer demographics, product categories, purchase amounts, discounts, subscription status, shipping methods, payment preferences, and review ratings.
 
-**1. Data Loading**
-- Imported the dataset using Python and Pandas.
-- Examined the dataset structure, columns, and data types.
+## 🛠️ Technology Stack
 
-**2. Data Cleaning & Preprocessing**
-- Identified and handled missing review ratings using median imputation by product category.
+| Technology | Application |
+|---|---|
+| Python | Data preprocessing and exploratory analysis |
+| Pandas | Data manipulation and transformation |
+| MySQL | Relational database management |
+| SQL | Business analysis and data querying |
+| Power BI | Interactive dashboards and data visualization |
+| Jupyter Notebook | Analytical exploration and documentation |
+
+## 🔄 Analytical Workflow
+
+### 1. Data Exploration
+
+- Imported the dataset using Pandas.
+- Examined data structure, dimensions, column types, and statistical summaries.
+- Identified missing values and potential data quality issues.
+
+### 2. Data Cleaning & Preprocessing
+
+- Handled missing review ratings using median imputation by product category.
 - Standardized column names using snake_case.
 - Removed redundant columns where appropriate.
+- Prepared a structured dataset for further analysis.
 
-**3. Exploratory Data Analysis**
-- Explored customer demographics and purchasing patterns.
-- Examined product category performance.
-- Investigated customer preferences and spending behavior.
+### 3. Exploratory Data Analysis (EDA)
 
-**4. Feature Engineering**
-- Created age groups to analyze customer behavior across different age segments.
-- Derived purchase frequency in days for further analysis.
+- Investigated customer demographics and purchasing patterns.
+- Analyzed category-wise sales and spending behavior.
+- Explored discount utilization and subscription preferences.
+- Examined customer ratings and shipping preferences.
 
-**5. SQL Analysis**
-- Loaded the processed data into PostgreSQL.
-- Wrote SQL queries to answer business questions and extract actionable insights.
+### 4. Feature Engineering
 
-**6. Power BI Dashboard**
-- Built an interactive dashboard to visualize customer metrics, revenue trends, category performance, and customer distribution.
-- Added filters to explore the data across different customer segments.
+- Created customer age groups to analyze demographic-based purchasing behavior.
+- Derived purchase frequency intervals for customer behavior analysis.
+- Prepared additional analytical attributes to support SQL-based segmentation.
 
-## 📊 Key Business Analysis
+### 5. SQL Analysis Using MySQL
 
-The SQL analysis covers questions such as:
+- Imported the cleaned dataset into MySQL.
+- Developed SQL queries to investigate business questions.
+- Used aggregations, filtering, conditional logic, and analytical queries to identify customer and product-level patterns.
+- Translated query results into business-oriented findings.
 
-1. What is the revenue contribution by gender?
-2. Do customers using discounts have higher purchase amounts?
-3. Which products receive the highest ratings?
-4. How do shipping types compare?
-5. How do subscribers and non-subscribers differ?
-6. Which product categories have higher discount usage?
-7. How can customers be segmented based on their purchase behavior?
-8. What are the top-performing products in each category?
-9. How do repeat purchases relate to subscription behavior?
-10. Which age groups contribute the most revenue?
+### 6. Power BI Dashboard Development
 
-## 📈 Power BI Dashboard
+- Designed an interactive dashboard to communicate key analytical findings.
+- Developed KPI cards to highlight important customer and purchasing metrics.
+- Visualized category-wise revenue, customer demographics, and subscription distribution.
+- Incorporated interactive filters for exploring customer segments and purchasing behavior.
 
-The interactive dashboard provides a visual overview of customer shopping behavior.
+## 🔍 Business Questions Explored
 
-**Dashboard Highlights:**
+The SQL analysis focuses on answering important business questions:
 
-- Total number of customers
-- Average purchase amount
-- Average review rating
-- Customer subscription distribution
-- Revenue by product category
-- Customer distribution by location
-- Revenue by age group
-- Sales by product category
-- Sales by age group
+**Customer Behavior & Demographics**
 
-### Dashboard Preview
+1. Which age groups contribute the most revenue?
+2. How does purchasing behavior vary across genders?
+3. Which customer segments demonstrate higher purchasing activity?
+4. How do repeat purchases relate to subscription behavior?
 
-<!-- Add your dashboard screenshot at assets/dashboard-preview.png -->
+**Product & Revenue Analysis**
 
-<p align="center">
-  <img src="assets/dashboard-preview.png" alt="RetailPulse Power BI Dashboard" width="100%" />
-</p>
+5. Which product categories generate the highest revenue?
+6. Which products receive the highest customer ratings?
+7. Which products perform best within each category?
+8. How does revenue contribution vary across customer segments?
 
-## 📁 Repository Structure
+**Discounts & Subscription Analysis**
 
-```text
-retailpulse-customer-analytics/
-│
-├── data/
-│   └── customer-shopping-behavior.csv
-│
-├── notebooks/
-│   └── customer-behavior-analysis.ipynb
-│
-├── sql/
-│   └── customer-behavior-analysis.sql
-│
-├── powerbi/
-│   └── retailpulse-powerbi-dashboard.pbix
-│
-├── docs/
-│   ├── business-problem-statement.pdf
-│   ├── customer-behavior-analysis-report.pdf
-│   └── retailpulse-project-presentation.pptx
-│
-├── assets/
-│   └── dashboard-preview.png
-│
-├── requirements.txt
-└── README.md
-```
+9. Do customers using discounts have different purchase amounts?
+10. Which product categories have higher discount utilization?
+11. How do subscribers and non-subscribers differ in purchasing behavior?
 
-## 🚀 Getting Started
+**Operational & Customer Insights**
 
-### 1. Clone the Repository
+12. How do different shipping methods compare in terms of customer purchases?
+13. What insights can be derived from customer ratings and reviews?
 
-```bash
-git clone https://github.com/thegkcode/retailpulse-customer-analytics.git
-```
+## 📊 Power BI Dashboard
 
-### 2. Navigate to the Project Directory
+The Power BI dashboard brings the analytical findings together in an interactive reporting experience.
 
-```bash
-cd retailpulse-customer-analytics
-```
+**Key Dashboard Components:**
 
-### 3. Install Dependencies
+- Total Customers
+- Average Purchase Amount
+- Average Review Rating
+- Customer Subscription Distribution
+- Revenue by Product Category
+- Customer Distribution by Location
+- Revenue by Age Group
+- Sales Performance by Product Category
+- Sales Distribution Across Age Groups
 
-```bash
-pip install -r requirements.txt
-```
+The dashboard enables users to explore customer segments, compare purchasing patterns, and identify meaningful trends through interactive filtering and visual analysis.
 
-### 4. Explore the Analysis
+## 💡 Business Value & Analytical Insights
 
-Open the Jupyter Notebook:
+RetailPulse demonstrates how retail transaction data can support business decision-making through:
 
-```bash
-jupyter notebook
-```
+- **Customer Understanding:** Identifying demographic and behavioral differences across customer segments.
+- **Revenue Analysis:** Understanding which product categories and customer groups contribute to sales.
+- **Discount Evaluation:** Investigating how promotional discounts relate to customer purchasing behavior.
+- **Subscription Analysis:** Comparing the purchasing patterns of subscribed and non-subscribed customers.
+- **Product Performance:** Evaluating products through purchase activity and customer ratings.
+- **Customer Engagement:** Identifying areas where businesses can further investigate repeat purchases and customer loyalty.
 
-### 5. Run SQL Analysis
+## 📚 Key Learnings
 
-- Set up a PostgreSQL database.
-- Import the processed dataset.
-- Execute the SQL queries available in the `sql/` directory.
+Through this project, I gained practical experience in:
 
-### 6. Explore the Dashboard
+- Cleaning and preprocessing real-world datasets using Python and Pandas.
+- Performing exploratory data analysis to identify patterns and trends.
+- Writing MySQL queries to solve business-oriented analytical problems.
+- Applying feature engineering techniques to improve analytical capabilities.
+- Connecting structured data analysis with business intelligence reporting.
+- Developing interactive Power BI dashboards.
+- Communicating analytical findings through a business-focused approach.
 
-Open the `.pbix` file using Microsoft Power BI Desktop.
+## 🚀 Future Enhancements
 
-## 💡 Key Learnings
+- Implement cohort analysis to understand customer retention over time.
+- Perform customer segmentation using RFM analysis.
+- Analyze purchasing trends and repeat customer behavior.
+- Introduce more advanced customer lifetime value analysis.
+- Enhance dashboard reporting with additional customer engagement KPIs.
 
-- Practical experience with real-world data cleaning and preprocessing.
-- Improved understanding of exploratory data analysis using Pandas.
-- Writing SQL queries to solve business-oriented questions.
-- Working with PostgreSQL for structured data analysis.
-- Designing interactive dashboards in Power BI.
-- Translating raw data into meaningful business insights.
-
-## 🔮 Future Improvements
-
-- Add more advanced customer segmentation techniques.
-- Explore customer retention and purchasing trends over time.
-- Improve dashboard storytelling with additional business KPIs.
-- Incorporate more datasets to expand the analysis.
+---
 
 ## 👨‍💻 Author
 
@@ -214,5 +189,5 @@ Computer Science Student | Aspiring Data Analyst
 ---
 
 <p align="center">
-  <strong>If you find this project interesting, consider giving it a ⭐!</strong>
+  <strong>Turning Data into Insights. Insights into Better Decisions.</strong>
 </p>
