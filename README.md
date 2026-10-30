@@ -1,5 +1,19 @@
 # 📊 RetailPulse – Customer Insights Dashboard
 
+<p align="center">
+  <strong>Turning Retail Data into Actionable Business Insights</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=databricks&logoColor=white" />
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+</p>
+
+---
+
 ## 📌 Project Overview
 
 **RetailPulse** is an end-to-end retail data analytics project focused on understanding customer purchasing behavior and identifying meaningful business insights from shopping data.
