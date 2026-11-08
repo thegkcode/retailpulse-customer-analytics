@@ -1,4 +1,4 @@
-# 📊 RetailPulse – Customer Shopping Behavior Analysis
+<h1 align="center">📊 RetailPulse – Customer Shopping Behavior Analysis</h1>
 
 <p align="center">
   <strong>Transforming Retail Data into Actionable Customer Insights</strong>
@@ -140,6 +140,6 @@ Computer Science Student | Aspiring Data Analyst
 
 ---
 
-<p align="center">
-  <strong>Turning Data into Insights. Insights into Better Decisions.</strong>
-</p>
+<div align="center">
+  <em><strong>Turning Data into Insights. Insights into Better Decisions.</strong></em>
+</div>
