@@ -8,7 +8,7 @@
 
 ## 📌 Project Overview
 
-**RetailPulse** is an end-to-end data analytics project focused on understanding customer shopping behavior, purchasing patterns, and product performance.
+**RetailPulse** is an end-to-end data analytics project that transforms raw retail transaction data into actionable insights on customer purchasing behavior, product performance, and sales trends. By leveraging data analysis and visualization, the project uncovers key patterns, evaluates business performance, and supports data-driven decision-making across the retail landscape.
 
 The project uses Python, Pandas, MySQL, SQL, and Power BI to transform raw retail data into meaningful business insights.
 
